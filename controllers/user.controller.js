@@ -140,6 +140,8 @@ userCtrl.getUserById = async (req, res) => {
   }
 };
 
-userCtrl.authenticateUser = async (req, res) => {};
+userCtrl.authenticateUser = async (req, res) => {
+
+};
 
 module.exports = userCtrl;
