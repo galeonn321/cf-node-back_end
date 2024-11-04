@@ -1,31 +1,34 @@
 {
-  "name": "cine-central-backend",
-  "version": "1.0.0",
-  "description": "Find the best films with real reviews.",
-  "main": "server.js",
-  "directories": {
-    "central_film": "central_film"
-  },
-  "scripts": {
-    "start": "nodemon server.js"
-  },
-  "author": "Santiago",
-  "license": "ISC",
-  "dependencies": {
-    "@types/express": "^5.0.0",
-    "@types/mongoose": "^5.11.96",
-    "bcrypt": "^5.1.1",
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.21.1",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.7.1",
-    "nodemon": "^3.1.7",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
-  },
-  "devDependencies": {
-    "@types/node": "^22.7.6"
-  }
+	"name": "cine-central-backend",
+	"version": "1.0.0",
+	"description": "Find the best films with real reviews.",
+	"main": "server.js",
+	"directories": {
+		"central_film": "central_film"
+	},
+	"scripts": {
+		"start": "nodemon server.js",
+		"format": "biome format --write .",
+		"lint": "biome lint --write ."
+	},
+	"author": "Santiago",
+	"license": "ISC",
+	"dependencies": {
+		"@types/express": "^5.0.0",
+		"@types/mongoose": "^5.11.97",
+		"bcrypt": "^5.1.1",
+		"body-parser": "^1.20.2",
+		"cors": "^2.8.5",
+		"dotenv": "^16.3.1",
+		"express": "^4.21.1",
+		"jsonwebtoken": "^9.0.2",
+		"mongoose": "^8.8.0",
+		"nodemon": "^3.1.7",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.6.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/node": "^22.8.7"
+	}
 }
