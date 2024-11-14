@@ -11,7 +11,7 @@ async function hashPassword(password) {
 		const hash = await bcrypt.hashSync(password, salt);
 		return hash;
 	} catch (error) {
-		throw error;
+		console.log(error);
 	}
 }
 
@@ -140,6 +140,6 @@ userCtrl.getUserById = async (req, res) => {
 	}
 };
 
-userCtrl.authenticateUser = async (req, res) => {};
+userCtrl.authenticateUser = async (req, res) => { };
 
 module.exports = userCtrl;
